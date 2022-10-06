@@ -11,13 +11,15 @@ export class AppComponent {
   isToggle = false;
   countClicks = 0;
   inputText = ""
+  
   toggleBtn() {
     this.isToggle = !this.isToggle;
     console.log(this.countClicks)
     this.countClicks++;
   }
 
-  list: any = [];
+  list: any = []; // try to not use 'any' type
+  
   addItem(item: any) {
     if (item == "") {
       alert("Please enter something!");
