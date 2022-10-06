@@ -20,6 +20,9 @@
 <div class="m-4">
   <div class="d-flex">
     <input #inputValue type="text" placeholder="Enter text" required>
+    
+    //add validation msg to input for required 
+    
     <button (click)="addItem(inputValue.value); inputValue.value=''" class="ms-4 px-4 btn btn-primary">Add</button>
   </div>
   <div class="my-4">
