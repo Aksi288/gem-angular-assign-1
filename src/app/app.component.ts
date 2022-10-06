@@ -17,7 +17,7 @@ export class AppComponent {
     this.countClicks++;
   }
 
-  list: any = [];
+  list: any = []; // try to not use Any type
   addItem(item: any) {
     if (item == "") {
       alert("Please enter something!");
